@@ -77,6 +77,12 @@
                 <copy file="${project.build.directory}/${project.build.finalName}.jar"
                   todir="${project.basedir}/../order-administration/jars/"
                   overwrite="true"/>
+                <copy todir="${project.basedir}/../order-administration/src/main/java/">
+                  <fileset dir="${project.basedir}/src/main/java/" />
+                </copy>
+                <copy todir="${project.basedir}/../order-data//src/main/java/">
+                  <fileset dir="${project.basedir}/src/main/java/" />
+                </copy>
               </target>
             </configuration>
           </execution>
