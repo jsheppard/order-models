@@ -1,5 +1,6 @@
 package com.sbsolutions.order.models;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 import lombok.AllArgsConstructor;
@@ -11,7 +12,7 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class Order {
+public class Order implements Serializable {
 
   @Id
   String id;
