@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "firstName": "John",
+    "middleName": "D",
+    "lastName": "Doe",
+    "address1": "123 Main St",
+    "address2": "Apt 4B",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62704",
+    "phone": "555-1234",
+    "email": "john.doe@example.com"
+  },
+  {
+    "id": "2",
+    "firstName": "Jane",
+    "middleName": "E",
+    "lastName": "Smith",
+    "address1": "456 Elm St",
+    "address2": "",
+    "city": "Shelbyville",
+    "state": "IL",
+    "zip": "62565",
+    "phone": "555-5678",
+    "email": "jane.smith@example.com"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "description": "Glazed",
+    "price": 1.50,
+    "url": "http://example.com/glazed.jpg"
+  },
+  {
+    "id": "2",
+    "description": "Chocolate",
+    "price": 2.00,
+    "url": "http://example.com/chocolate.jpg"
+  },
+  {
+    "id": "3",
+    "description": "Jelly Filled",
+    "price": 2.50,
+    "url": "http://example.com/jelly.jpg"
+  }
+]

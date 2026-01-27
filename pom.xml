@@ -21,10 +21,10 @@
   <description>Shared domain models for Order Management System</description>
 
   <dependencies>
-    <!-- Spring Data MongoDB - for @Document, @Id annotations -->
+    <!-- Spring Data Commons - for @Id annotation -->
     <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-mongodb</artifactId>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-commons</artifactId>
       <scope>provided</scope>
     </dependency>
 
@@ -40,6 +40,13 @@
       <groupId>jakarta.validation</groupId>
       <artifactId>jakarta.validation-api</artifactId>
       <scope>provided</scope>
+    </dependency>
+
+    <!-- Test Dependencies -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 

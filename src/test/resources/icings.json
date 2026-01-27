@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "description": "Chocolate",
+    "url": "http://example.com/chocolate_icing.jpg"
+  },
+  {
+    "id": "2",
+    "description": "Vanilla",
+    "url": "http://example.com/vanilla_icing.jpg"
+  },
+  {
+    "id": "3",
+    "description": "Strawberry",
+    "url": "http://example.com/strawberry_icing.jpg"
+  }
+]

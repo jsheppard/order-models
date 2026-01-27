@@ -8,13 +8,11 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @RequiredArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"id"})
-@Document(collection = "donuts")
 public class Donut implements Serializable {
   @Id
   String id;
@@ -22,7 +20,5 @@ public class Donut implements Serializable {
   String description;
   @NotBlank
   BigDecimal price;
-  String unit = "USD";
-  String currency;
   String url;
 }
