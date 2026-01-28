@@ -1,8 +1,0 @@
-com/sbsolutions/order/models/Customer.class
-com/sbsolutions/order/models/Icing.class
-com/sbsolutions/order/models/Donut.class
-com/sbsolutions/order/models/Order.class
-com/sbsolutions/order/models/Frosting.class
-com/sbsolutions/order/models/ItemType.class
-com/sbsolutions/order/models/OrderType.class
-com/sbsolutions/order/models/Item.class
