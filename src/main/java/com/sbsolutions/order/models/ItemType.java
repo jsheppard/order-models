@@ -1,5 +1,5 @@
 package com.sbsolutions.order.models;
 
 public enum ItemType {
-  DONUT
+  DONUT, ROLLS
 }

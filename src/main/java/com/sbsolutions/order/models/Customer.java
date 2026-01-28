@@ -1,5 +1,6 @@
 package com.sbsolutions.order.models;
 
+import java.io.Serial;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,6 +13,9 @@ import org.springframework.data.annotation.Id;
 @NoArgsConstructor
 @EqualsAndHashCode(of = {"id"})
 public class Customer implements Serializable {
+
+  @Serial
+  private static final long serialVersionUID = 1L;
 
   @Id
   String id;

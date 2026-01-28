@@ -26,4 +26,15 @@ class FrostingTest {
     assertThat(frosting.getDescription()).isEqualTo("Vanilla");
     assertThat(frosting.getUrl()).isEqualTo("http://example.com/vanilla.jpg");
   }
+
+  @Test
+  void testEqualsAndHashCode() {
+    Frosting frosting1 = new Frosting("1", "Vanilla", "http://example.com/vanilla.jpg");
+    Frosting frosting2 = new Frosting("1", "Chocolate", "http://example.com/chocolate.jpg"); // Different data, same ID
+    Frosting frosting3 = new Frosting("2", "Vanilla", "http://example.com/vanilla.jpg");
+
+    assertThat(frosting1).isEqualTo(frosting2);
+    assertThat(frosting1).hasSameHashCodeAs(frosting2);
+    assertThat(frosting1).isNotEqualTo(frosting3);
+  }
 }

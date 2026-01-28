@@ -1,6 +1,7 @@
 package com.sbsolutions.order.models;
 
 import jakarta.validation.constraints.NotBlank;
+import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
@@ -14,11 +15,15 @@ import org.springframework.data.annotation.Id;
 @AllArgsConstructor
 @EqualsAndHashCode(of = {"id"})
 public class Donut implements Serializable {
+
+  @Serial
+  private static final long serialVersionUID = 1L;
+
   @Id
-  String id;
+  protected String id;
   @NotBlank
-  String description;
+  protected String description;
   @NotBlank
-  BigDecimal price;
-  String url;
+  protected BigDecimal price;
+  protected String url;
 }

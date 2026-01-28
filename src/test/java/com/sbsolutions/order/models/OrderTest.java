@@ -51,4 +51,16 @@ class OrderTest {
     Order order = new Order();
     assertThat(order.getType()).isEqualTo(OrderType.DELIVERY);
   }
+
+  @Test
+  void testEqualsAndHashCode() {
+    Date now = new Date();
+    Order order1 = new Order("1", 100, now, OrderType.PICKUP, now, true, now, Collections.emptyList());
+    Order order2 = new Order("1", 101, now, OrderType.DELIVERY, now, false, now, Collections.emptyList()); // Different data, same ID
+    Order order3 = new Order("2", 100, now, OrderType.PICKUP, now, true, now, Collections.emptyList());
+
+    assertThat(order1).isEqualTo(order2);
+    assertThat(order1).hasSameHashCodeAs(order2);
+    assertThat(order1).isNotEqualTo(order3);
+  }
 }
